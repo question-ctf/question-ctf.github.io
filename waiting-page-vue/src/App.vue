@@ -194,7 +194,7 @@ body::before {
   align-items: center;
   justify-content: flex-start;
   min-height: calc(100vh - 2rem);
-  margin: 1rem;
+  margin: 1rem auto;
   padding: 2rem 1rem 1rem 1rem;
   border: 3px solid transparent;
   border-radius: 25px;
@@ -209,12 +209,13 @@ body::before {
   position: relative;
   animation: containerFloat 6s ease-in-out infinite;
   box-sizing: border-box;
+  max-width: 1200px;
 }
 
 @media (max-width: 768px) {
   #app {
     padding: 1rem 0.5rem 0.5rem 0.5rem;
-    margin: 0.5rem;
+    margin: 0.5rem auto;
     min-height: calc(100vh - 1rem);
   }
   
