@@ -379,12 +379,15 @@ header h1 {
 .countdown-container {
   display: flex;
   gap: 2rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .countdown-item {
   padding: 2rem;
   border: 2px solid;
   image-rendering: pixelated;
+  text-align: center;
 }
 
 .countdown-item.orange {
@@ -427,6 +430,8 @@ header h1 {
 .timer {
   display: flex;
   gap: 1rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .time-box {
@@ -443,7 +448,7 @@ header h1 {
 .info-container {
   display: flex;
   justify-content: space-between;
-  margin: 2rem 0;
+  margin: 1rem auto;
   max-width: 800px;
   gap: 2rem;
 }
@@ -490,6 +495,7 @@ header h1 {
 
 .info-section h3 {
   font-size: 1.5rem;
+  margin-top: 0;
   margin-bottom: 0.5rem;
   background: linear-gradient(45deg, #e74c3c, #f39c12);
   -webkit-background-clip: text;
