@@ -145,18 +145,10 @@ body {
   padding: 0;
   overflow-x: hidden;
   position: relative;
-  animation: backgroundShift 10s ease-in-out infinite;
   min-height: 100vh;
 }
 
-@keyframes backgroundShift {
-  0%, 100% {
-    background: linear-gradient(135deg, #f0f8ff 0%, #e6f3ff 25%, #fff5ee 50%, #f0fff0 75%, #faf0e6 100%);
-  }
-  50% {
-    background: linear-gradient(135deg, #fff5ee 0%, #f0fff0 25%, #f0f8ff 50%, #faf0e6 75%, #e6f3ff 100%);
-  }
-}
+
 
 body::before {
   content: '';
@@ -172,17 +164,9 @@ body::before {
     conic-gradient(from 0deg at 50% 50%, transparent 0deg, rgba(46, 204, 113, 0.05) 90deg, transparent 180deg, rgba(231, 76, 60, 0.05) 270deg, transparent 360deg);
   pointer-events: none;
   z-index: -1;
-  animation: patternRotate 20s linear infinite;
 }
 
-@keyframes patternRotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
 
 #app {
   font-family: 'Orbitron', 'Roboto Mono', monospace;
@@ -207,7 +191,6 @@ body::before {
     inset 0 1px 0 rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(10px);
   position: relative;
-  animation: containerFloat 6s ease-in-out infinite;
   box-sizing: border-box;
   max-width: 1200px;
 }
@@ -363,17 +346,7 @@ body::before {
   }
 }
 
-@keyframes containerFloat {
-  0%, 100% {
-    transform: translateY(0px) rotate(0deg);
-  }
-  33% {
-    transform: translateY(-10px) rotate(0.5deg);
-  }
-  66% {
-    transform: translateY(5px) rotate(-0.5deg);
-  }
-}
+
 
 header {
   display: flex;
@@ -388,20 +361,9 @@ header {
   height: 50px;
   margin-right: 1rem;
   filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.1));
-  animation: faviconFloat 3s ease-in-out infinite;
 }
 
-@keyframes faviconFloat {
-  0%, 100% {
-    transform: translateY(0px) rotate(0deg);
-  }
-  33% {
-    transform: translateY(-5px) rotate(2deg);
-  }
-  66% {
-    transform: translateY(2px) rotate(-1deg);
-  }
-}
+
 
 header h1 {
   font-size: 4rem;
@@ -447,7 +409,6 @@ header h1 {
     0 8px 25px rgba(231, 76, 60, 0.2),
     inset 0 1px 0 rgba(255, 255, 255, 0.8);
   font-weight: 600;
-  animation: countdownPulse 2s ease-in-out infinite;
 }
 
 .start-time {
@@ -461,16 +422,7 @@ header h1 {
   font-weight: 500;
 }
 
-@keyframes countdownPulse {
-  0%, 100% {
-    transform: scale(1);
-    box-shadow: 0 8px 25px rgba(231, 76, 60, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.8);
-  }
-  50% {
-    transform: scale(1.02);
-    box-shadow: 0 12px 35px rgba(231, 76, 60, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.9);
-  }
-}
+
 
 .timer {
   display: flex;
@@ -596,18 +548,10 @@ footer {
   width: 200%;
   height: 200%;
   background: conic-gradient(from 0deg, transparent, rgba(155, 89, 182, 0.05), transparent, rgba(46, 204, 113, 0.05), transparent);
-  animation: sectionRotate 15s linear infinite;
   z-index: -1;
 }
 
-@keyframes sectionRotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
 
 .about-section h2 {
   font-size: 2rem;
